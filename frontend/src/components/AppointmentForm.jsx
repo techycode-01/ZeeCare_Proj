@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const AppointmentForm = () => {
@@ -50,7 +50,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "http://localhost:5000/api/v1/user/doctors",
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/doctors`,
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -135,7 +135,7 @@ const AppointmentForm = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:5000/api/v1/appointment/post",
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/appointment/post`,
         appointmentData,
         {
           withCredentials: true,
@@ -154,7 +154,7 @@ const AppointmentForm = () => {
           const { razorpay_payment_id, razorpay_order_id, razorpay_signature } = response;
           try {
             const verificationResponse = await axios.post(
-              "http://localhost:5000/api/v1/appointment/paymentverification",
+              `${import.meta.env.VITE_BACKEND_URL}/api/v1/appointment/paymentverification`,
               {
                 razorpay_order_id,
                 razorpay_payment_id,
@@ -167,7 +167,7 @@ const AppointmentForm = () => {
             );
             if (verificationResponse.data.success) {
               const confirmResponse = await axios.post(
-                "http://localhost:5000/api/v1/appointment/confirm",
+                `${import.meta.env.VITE_BACKEND_URL}/api/v1/appointment/confirm`,
                 {
                   ...appointmentData,
                   razorpay_payment_id,

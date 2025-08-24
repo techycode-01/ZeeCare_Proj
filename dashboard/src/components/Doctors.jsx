@@ -26,7 +26,7 @@ const Doctors = () => {
   const fetchDoctors = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/v1/user/doctors",
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/doctors`,
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -44,7 +44,7 @@ const Doctors = () => {
     if (confirmDelete) {
       try {
         await axios.delete(
-          `http://localhost:5000/api/v1/user/doctors/delete/${id}`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/doctors/delete/${id}`,
           { withCredentials: true }
         );
         toast.success("Doctor deleted successfully!");
@@ -65,7 +65,7 @@ const Doctors = () => {
     e.preventDefault();
     try {
       await axios.put(
-        `http://localhost:5000/api/v1/user/doctors/update/${selectedDoctor._id}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/doctors/update/${selectedDoctor._id}`,
         updatedDoctor,
         { withCredentials: true }
       );

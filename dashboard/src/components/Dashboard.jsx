@@ -23,7 +23,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/v1/appointment/getall",
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/appointment/getall`,
           {
             withCredentials: true,
             params: {
@@ -48,7 +48,7 @@ const Dashboard = () => {
     const fetchStats = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/v1/user/stats",
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/stats`,
           { withCredentials: true }
         );
         setTotalAppointments(data.totalAppointments);
@@ -64,7 +64,7 @@ const Dashboard = () => {
     const fetchDoctorsAndDepartments = async () => {
       try {
         const { data: doctorsData } = await axios.get(
-          "http://localhost:5000/api/v1/user/doctors",
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/doctors`,
           { withCredentials: true }
         );
         setDoctors(doctorsData.doctors);
@@ -82,7 +82,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:5000/api/v1/appointment/update/${appointmentId}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );

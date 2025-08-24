@@ -78,6 +78,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## Environment Variables
 
+### Backend
+
 Create a `.env` file in the `backend` directory and add the following variables:
 
 ```
@@ -105,6 +107,15 @@ PORT=5000
 RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
 RAZORPAY_SECRET=YOUR_RAZORPAY_SECRET
 ```
+
+### Frontend & Dashboard
+
+Create a `.env` file in the `frontend` and `dashboard` directories respectively, and add the following variable:
+
+```
+VITE_BACKEND_URL=YOUR_DEPLOYED_BACKEND_URL
+```
+Replace `YOUR_DEPLOYED_BACKEND_URL` with the actual URL of your deployed backend API (e.g., `https://your-backend-api.com`).
 
 ## Available Scripts
 
