@@ -209,39 +209,39 @@ e:/Projects/ZeeCare_Proj/
 ### Frontend
 
 #### Homepage
-![Frontend Homepage](preview/Frontend/homepage.png)
+![Frontend Homepage](preview/frontend/homepage.png)
 
 #### Signup
-![Frontend Signup](preview/Frontend/signup.png)
+![Frontend Signup](preview/frontend/signupform.png)
 
 #### Login
-![Frontend Login](preview/Frontend/login.png)
+![Frontend Login](preview/frontend/loginform.png)
 
 #### Appointment
-![Frontend Appointment](preview/Frontend/appointment.png)
+![Frontend Appointment](preview/frontend/appointment.png)
 
 #### About
-![Frontend About](preview/Frontend/about.png)
+![Frontend About](preview/frontend/aboutus.png)
 
 #### Footer
-![Frontend Footer](preview/Frontend/footer.png)
+![Frontend Footer](preview/frontend/footer.png)
 
 ### Admin
 
 #### Admin Homepage
-![Admin Homepage](preview/Admin/admin_homepage.png)
+![Admin Homepage](preview/admin/admin_home.png)
 
 #### Doctors
-![Admin Doctors](preview/Admin/doctors.png)
+![Admin Doctors](preview/admin/doctors.png)
 
 #### Edit
-![Admin Edit](preview/Admin/edit.png)
+![Admin Edit](preview/admin/edit.png)
 
 #### Add New Admin
-![Admin Add New Admin](preview/Admin/addnewadmin.png)
+![Admin Add New Admin](preview/admin/addnewAdminForm.png)
 
 #### Register New Doctor
-![Admin Register New Doctor](preview/Admin/registernewdoctor.png)
+![Admin Register New Doctor](preview/admin/registernewDoctor.png)
 
 #### Messages
-![Admin Messages](preview/Admin/message.png)
+![Admin Messages](preview/admin/messages.png)
