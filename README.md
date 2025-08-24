@@ -10,6 +10,11 @@ ZeeCare is a full-stack web application designed to streamline the process of ma
 *   **Backend:** A robust Node.js and Express.js server that handles all the business logic, API requests, and database interactions.
 *   **Dashboard:** A separate administrative interface for doctors and staff to manage appointments, view patient messages, and add new staff members.
 
+## Deployed Links
+
+*   **Frontend:** https://zeecare-frontend.netlify.app/
+*   **Admin/Dashboard:** https://zeecaredashboard.netlify.app/
+
 ## Tech Stack
 
 ### Backend
@@ -35,6 +40,7 @@ ZeeCare is a full-stack web application designed to streamline the process of ma
 *   Browse a list of doctors.
 *   Book appointments with specific doctors.
 *   Send messages or inquiries via a contact form.
+*   Integrated with Razorpay for secure payment processing.
 
 ### Admin Dashboard
 *   Secure login for administrators and doctors.
@@ -172,25 +178,70 @@ e:/Projects/ZeeCare_Proj/
 │           ├── Login.jsx
 │           ├── Messages.jsx
 │           └── Sidebar.jsx
-└── frontend/
-    ├── index.html
-    ├── package.json
-    └── src/
-        ├── App.css
-        ├── App.jsx
-        ├── main.jsx
-        ├── components/
-        │   ├── AppointmentForm.jsx
-        │   ├── Biography.jsx
-        │   ├── Departments.jsx
-        │   ├── Footer.jsx
-        │   ├── Hero.jsx
-        │   ├── MessageForm.jsx
-        │   └── Navbar.jsx
-        └── Pages/
-            ├── AboutUs.jsx
-            ├── Appointment.jsx
-            ├── Home.jsx
-            ├── Login.jsx
-            └── Register.jsx
+├── frontend/
+│   ├── index.html
+│   ├── package.json
+│   └── src/
+│       ├── App.css
+│       ├── App.jsx
+│       ├── main.jsx
+│       ├── components/
+│       │   ├── AppointmentForm.jsx
+│       │   ├── Biography.jsx
+│       │   ├── Departments.jsx
+│       │   ├── Footer.jsx
+│       │   ├── Hero.jsx
+│       │   ├── MessageForm.jsx
+│       │   └── Navbar.jsx
+│       └── Pages/
+│           ├── AboutUs.jsx
+│           ├── Appointment.jsx
+│           ├── Home.jsx
+│           ├── Login.jsx
+│           └── Register.jsx
+└── preview/
+    ├── Admin/
+    └── Frontend/
 ```
+
+## Screenshots
+
+### Frontend
+
+#### Homepage
+![Frontend Homepage](preview/Frontend/homepage.png)
+
+#### Signup
+![Frontend Signup](preview/Frontend/signup.png)
+
+#### Login
+![Frontend Login](preview/Frontend/login.png)
+
+#### Appointment
+![Frontend Appointment](preview/Frontend/appointment.png)
+
+#### About
+![Frontend About](preview/Frontend/about.png)
+
+#### Footer
+![Frontend Footer](preview/Frontend/footer.png)
+
+### Admin
+
+#### Admin Homepage
+![Admin Homepage](preview/Admin/admin_homepage.png)
+
+#### Doctors
+![Admin Doctors](preview/Admin/doctors.png)
+
+#### Edit
+![Admin Edit](preview/Admin/edit.png)
+
+#### Add New Admin
+![Admin Add New Admin](preview/Admin/addnewadmin.png)
+
+#### Register New Doctor
+![Admin Register New Doctor](preview/Admin/registernewdoctor.png)
+
+#### Messages
+![Admin Messages](preview/Admin/message.png)
