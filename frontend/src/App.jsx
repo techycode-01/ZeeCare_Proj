@@ -38,7 +38,7 @@ const App = () => {
     if (!isAuthenticated) {
       fetchUser();
     }
-  }, []); // Remove isAuthenticated dependency to prevent infinite loop
+  }, []);
 
   return (
     <>
